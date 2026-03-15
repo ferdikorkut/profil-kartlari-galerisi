@@ -1,0 +1,121 @@
+/* Tüm elementlerin varsayılan boşluklarını sıfırlıyoruz */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  /* Tüm elementlerin fontunu miras almasını sağlıyoruz */
+  button,
+  input,
+  select,
+  textarea {
+    font: inherit;
+  }
+}
+
+/* Listelerdeki noktaları kaldırıyoruz */
+ul,
+ol {
+  list-style: none;
+}
+
+/* Linkerdeki alt çizgileri kaldırıyoruz */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Resimlerin taşmasını önlüyoruz ve alt boşluğu kaldırıyoruz */
+img {
+  max-width: 100%;
+  /* resimler taşmasın */
+  display: block;
+  /* img alt boşluğu kaldırır */
+}
+
+/* Renk değişkenleri tanımlıyoruz */
+:root {
+  --primary-color: #3498db;
+  /* Ana renk */
+  --secondary-color: #2ecc71;
+  /* İkincil renk */
+  --font-color: #474747;
+  /* Yazı rengi */
+}
+
+/* Sayfanın genel düzenini yapiyoruz */
+body {
+  font-family: Arial, sans-serif;
+  /* Font verdik */
+  line-height: 1.6;
+  /* Satır yüksekliği verdik */
+  background-color: #d0d0d0;
+  font-size: large;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 30px 0px 40px 0px;
+  text-align: center;
+}
+
+main {
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.profile-card {
+  background-color: rgb(223, 225, 225);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  height: 550px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.profile-card img {
+  border-radius: 15px;
+  /* width: 100px; */
+  /* height: 100px; */
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.card-1 {
+  border: none;
+}
+
+.card-2,
+.card-3 {
+  background-color: #d8dfe3;
+  border: dashed 2px #ccc;
+}
+
+.profile-card:hover {
+  outline: 2px solid #1b39fb;
+  outline-offset: 10px;
+  transform: translateY(-20px);
+  transition: transform 300ms;
+}
+
+.profile-card p {
+  color: var(--font-color);
+  font-size: 20px;
+}
+
+.profile-card a {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-align: center;
+  align-self: flex-start;
+}
