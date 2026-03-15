@@ -50,7 +50,7 @@ body {
   line-height: 1.6;
   /* Satır yüksekliği verdik */
   background-color: #d0d0d0;
-  font-size: large;
+  font-size: larger;
 }
 
 header {
@@ -58,6 +58,10 @@ header {
   color: white;
   padding: 30px 0px 40px 0px;
   text-align: center;
+}
+
+header p {
+  font-size: 22px;
 }
 
 main {
