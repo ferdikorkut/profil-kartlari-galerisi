@@ -94,4 +94,4 @@ Her biri **en az 1 kez** kullanılmalıdır:
 ---
 
 ## Resim 
-<img src="../img/odev2.png" alt="Ödev Görseli" width="600">
+<img src="/odev2.png" alt="Ödev Görseli" width="600">
